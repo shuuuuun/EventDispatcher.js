@@ -1,15 +1,14 @@
 (function(win){
-  var ns = win.App = win.App || {};
   
-  ns.EventDispatcher = function() {
+  win.EventDispatcher = function() {
     this.event_list = [];
   };
   
-  ns.EventDispatcher.prototype.has     = has;
-  ns.EventDispatcher.prototype.on      = on;
-  ns.EventDispatcher.prototype.off     = off;
-  ns.EventDispatcher.prototype.trigger = trigger;
-  ns.EventDispatcher.prototype.fire    = trigger;
+  win.EventDispatcher.prototype.has     = has;
+  win.EventDispatcher.prototype.on      = on;
+  win.EventDispatcher.prototype.off     = off;
+  win.EventDispatcher.prototype.trigger = trigger;
+  win.EventDispatcher.prototype.fire    = trigger;
   
   function has(EVENT_NAME) {
     return !!this.event_list[EVENT_NAME];
