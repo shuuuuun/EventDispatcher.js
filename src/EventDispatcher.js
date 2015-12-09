@@ -9,6 +9,7 @@
   win.EventDispatcher.prototype.off     = off;
   win.EventDispatcher.prototype.trigger = trigger;
   win.EventDispatcher.prototype.fire    = trigger;
+  win.EventDispatcher.prototype.emit    = trigger;
   
   function has(EVENT_NAME) {
     return !!this.event_list[EVENT_NAME];
